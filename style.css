@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o corpo ocupa toda a altura da tela */
+    margin: 0;
+    /* Gradiente de verde limão (#bfff00) para preto (#000) */
+    background: linear-gradient(to bottom, #bfff00, #000); 
+    font-family: 'Arial', sans-serif; /* Fonte padrão, você pode mudar */
+}
+
+.profile-card {
+    background-color: #ffffff; /* Fundo branco para o cartão */
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Sombra suave para profundidade */
+    padding: 35px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto e a imagem */
+    width: 320px; /* Largura fixa do cartão */
+    max-width: 90%; /* Garante que o cartão não ultrapasse 90% da largura da tela em dispositivos menores */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura/altura */
+}
+
+.profile-image {
+    width: 110px; /* Largura da imagem */
+    height: 110px; /* Altura da imagem */
+    border-radius: 50%; /* Faz a imagem ser um círculo perfeito */
+    overflow: hidden; /* Garante que a imagem não saia do círculo */
+    margin: 0 auto 25px auto; /* Centraliza a imagem e adiciona margem inferior */
+    border: 3px solid #bfff00; /* Borda verde limão ao redor da imagem */
+    box-shadow: 0 0 12px rgba(191, 255, 0, 0.6); /* Brilho sutil na borda */
+}
+
+.profile-image img {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando se necessário */
+}
+
+.profile-name {
+    font-size: 28px; /* Tamanho da fonte do nome */
+    font-weight: 700; /* Peso da fonte (negrito) */
+    color: #333333; /* Cor escura para o nome */
+    margin-bottom: 8px; /* Espaçamento abaixo do nome */
+    letter-spacing: 0.5px; /* Pequeno espaçamento entre letras */
+}
+
+.profile-description {
+    font-size: 17px; /* Tamanho da fonte da descrição */
+    color: #555555; /* Cor um pouco mais clara para a descrição */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+    margin-bottom: 0; /* Remove margem padrão inferior */
+}
